@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 public class RedissonConfiguration {
 
     /**
-     * Redis 地址
+     * Redis 主机
      */
     private String host;
 
