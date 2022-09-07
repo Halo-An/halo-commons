@@ -6,16 +6,11 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 可重入锁
- *
- * 进入该注解的方法之前会尝试加锁waiteTime秒，未获取到会抛出异常，获取到则持有该锁并执行方法体；
- * 过程中通过watch dog机制自动对锁有效期进行延时，从而避免因方法执行过久导致锁超时失效；
- * 方法执行完成后自动释放锁。
- *
+ * 写锁
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Lock {
+public @interface WriteLock {
 
     /**
      * SpEL表达式数组，用于组成锁名
