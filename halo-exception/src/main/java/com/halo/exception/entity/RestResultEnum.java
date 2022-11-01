@@ -6,7 +6,7 @@ package com.halo.exception.entity;
 public enum RestResultEnum {
 
 
-    OK(200, "请求成功"),
+    SUCCESS(200, "请求成功"),
     BAD_REQUEST(400, "请求失败"),
     UNAUTHORIZED(401, "未授权"),
     FORBIDDEN(403, "禁止访问"),
