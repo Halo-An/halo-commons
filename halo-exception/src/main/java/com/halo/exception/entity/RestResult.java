@@ -26,20 +26,20 @@ public class RestResult {
         this.code = code;
     }
 
-    public static RestResult ok() {
-        return new RestResult(RestResultEnum.OK.getCode(), RestResultEnum.OK.getMessage());
+    public static RestResult success() {
+        return new RestResult(RestResultEnum.SUCCESS.getCode(), RestResultEnum.SUCCESS.getMessage());
     }
 
-    public static RestResult ok(Object data) {
-        return new RestResult(RestResultEnum.OK.getCode(), RestResultEnum.OK.getMessage(), data);
+    public static RestResult success(Object data) {
+        return new RestResult(RestResultEnum.SUCCESS.getCode(), RestResultEnum.SUCCESS.getMessage(), data);
     }
 
-    public static RestResult ok(String msg) {
-        return new RestResult(RestResultEnum.OK.getCode(), msg);
+    public static RestResult success(String msg) {
+        return new RestResult(RestResultEnum.SUCCESS.getCode(), msg);
     }
 
-    public static RestResult ok(String msg, Object data) {
-        return new RestResult(RestResultEnum.OK.getCode(), msg, data);
+    public static RestResult success(String msg, Object data) {
+        return new RestResult(RestResultEnum.SUCCESS.getCode(), msg, data);
     }
 
     public static RestResult badRequest() {
