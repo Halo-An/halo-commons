@@ -21,6 +21,7 @@
     <modules>
         <module>halo-lock</module>
         <module>halo-exception</module>
+        <module>halo-chain</module>
     </modules>
     <dependencyManagement>
         <dependencies>
